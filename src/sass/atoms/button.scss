@@ -1,0 +1,32 @@
+button,
+input[type='submit'],
+.btn
+{
+    font-size: .8rem;
+
+    display: inline-block;
+
+    width: auto;
+    height: 30px;
+    padding: 2px 15px;
+
+    border: 2px solid;
+    border-top-color: $white;
+    border-right-color: $black;
+    border-bottom-color: $black;
+    border-left-color: $white;
+    background-color: $grey;
+    &:focus,
+    &.active
+    {
+        border-top-color: $black;
+        border-right-color: $white;
+        border-bottom-color: $white;
+        border-left-color: $black;
+        outline: none;
+    }
+    &.disabled
+    {
+        background-color: $grey;
+    }
+}

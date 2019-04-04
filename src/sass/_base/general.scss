@@ -1,0 +1,16 @@
+@font-face
+{
+    font-family: 'windows';
+
+    src: url('windows.woff2') format('woff2'),
+    url('windows.woff') format('woff');
+}
+
+body
+{
+    font-family: 'windows', monospace;
+    font-size: .8rem;
+
+    color: $black;
+    background-color: $green;
+}

@@ -1,0 +1,48 @@
+.nav
+{
+    display: flex;
+
+    margin-bottom: 40px;
+    padding: 4px;
+
+    border-bottom: 2px solid $white;
+    background-color: $grey;
+    box-shadow: 0 2px 2px rgba(0,0,0,.2);
+
+    align-items: center;
+}
+
+.nav-logo
+{
+    img
+    {
+        max-height: 40px;
+    }
+}
+.nav-link
+{
+    line-height: 2;
+
+    height: 40px;
+    margin: 0 2px;
+    padding: 4px 40px 4px 10px;
+
+    color: $black;
+    border: 2px solid;
+    border-top-color: $white;
+    border-right-color: $black;
+    border-bottom-color: $black;
+    border-left-color: $white;
+    background-color: $grey;
+    &:hover
+    {
+        color: $black;
+    }
+    &.active
+    {
+        border-top-color: $black;
+        border-right-color: $white;
+        border-bottom-color: $white;
+        border-left-color: $black;
+    }
+}

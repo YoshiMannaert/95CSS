@@ -1,0 +1,71 @@
+.modal
+{
+    display: none;
+}
+
+.modal.is-open
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.modal-bg
+{
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,.5);
+}
+
+.modal-dialog
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+
+    transform: translateY(-50%);
+
+    @extend %card;
+}
+
+.modal-header
+{
+    position: relative;
+
+    @extend %card-header;
+}
+
+.modal-close
+{
+    position: absolute;
+    top: 5px;
+    right: 4px;
+
+    height: 24px;
+    padding: 0 4px;
+}
+
+.modal-title
+{
+    @extend %card-title;
+}
+
+.modal-body
+{
+    @extend %card-body;
+}
