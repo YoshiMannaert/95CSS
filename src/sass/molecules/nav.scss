@@ -1,5 +1,7 @@
 .nav
 {
+    position: relative;
+
     display: flex;
 
     margin-bottom: 40px;
@@ -10,6 +12,45 @@
     box-shadow: 0 2px 2px rgba(0,0,0,.2);
 
     align-items: center;
+    &:before
+    {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        width: 100%;
+        height: 2px;
+
+        content: '';
+
+        background-color: $grey-light;
+    }
+    &.nav-top
+    {
+        position: sticky;
+        z-index: 20;
+        top: 0;
+    }
+    &.nav-bottom
+    {
+        position: fixed;
+        z-index: 20;
+        bottom: 0;
+
+        width: 100%;
+        margin: 0;
+
+        border-top: 2px solid $white;
+        border-bottom: none;
+        box-shadow: 0 -2px 2px rgba(0,0,0,.2);
+        &:before
+        {
+            top: 0;
+            bottom: unset;
+        }
+    }
 }
 
 .nav-logo
@@ -27,6 +68,8 @@
 {
     line-height: 2;
 
+    position: relative;
+
     height: 40px;
     margin: 0 2px;
     padding: 4px 40px 4px 10px;
@@ -38,7 +81,6 @@
     border-bottom-color: $black;
     border-left-color: $white;
     background-color: $grey;
-    position: relative;
     &:before
     {
         position: absolute;
@@ -67,7 +109,8 @@
         border-right-color: $white;
         border-bottom-color: $white;
         border-left-color: $black;
-        &:before{
+        &:before
+        {
             border-top-color: $grey-dark;
             border-right-color: $grey-light;
             border-bottom-color: $grey-light;
