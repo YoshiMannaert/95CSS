@@ -1,28 +1,54 @@
 %card
 {
+    position: relative;
+
     border: 2px solid;
     border-top-color: $white;
     border-right-color: $black;
     border-bottom-color: $black;
     border-left-color: $white;
     background-color: $grey;
+    &:before
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        content: '';
+
+        border: 2px solid;
+        border-top-color: $grey-light;
+        border-right-color: $grey-dark;
+        border-bottom-color: $grey-dark;
+        border-left-color: $grey-light;
+    }
 }
-%card-header{
+%card-header
+{
     padding: 4px 10px 6px;
 
     color: $white;
     background-color: $blue;
 }
-%card-title{
-    display: block;
-    margin: 0;
+%card-title
+{
     font-size: 1rem;
+
+    display: block;
+
+    margin: 0;
 }
-%card-body{
+%card-body
+{
     margin: 10px;
 }
 
-.card{
+.card
+{
     @extend %card;
 }
 

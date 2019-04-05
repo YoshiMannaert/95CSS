@@ -38,6 +38,25 @@
     border-bottom-color: $black;
     border-left-color: $white;
     background-color: $grey;
+    position: relative;
+    &:before
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        content: '';
+
+        border: 2px solid;
+        border-top-color: $grey-light;
+        border-right-color: $grey-dark;
+        border-bottom-color: $grey-dark;
+        border-left-color: $grey-light;
+    }
     &:hover
     {
         color: $black;
@@ -48,5 +67,11 @@
         border-right-color: $white;
         border-bottom-color: $white;
         border-left-color: $black;
+        &:before{
+            border-top-color: $grey-dark;
+            border-right-color: $grey-light;
+            border-bottom-color: $grey-light;
+            border-left-color: $grey-dark;
+        }
     }
 }
