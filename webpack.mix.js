@@ -11,8 +11,8 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('src/js/millie.js', 'dist/')
-    .sass('src/sass/millie.scss', 'dist/')
+mix.js('src/js/95css.js', 'dist/')
+    .sass('src/sass/95css.scss', 'dist/')
     .options({
         processCssUrls: false
     });

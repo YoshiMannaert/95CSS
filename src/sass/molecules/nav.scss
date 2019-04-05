@@ -19,7 +19,11 @@
         max-height: 40px;
     }
 }
-.nav-link
+.nav-link,
+.nav-link:link,
+.nav-link:visited,
+.nav-link:hover,
+.nav-link:active
 {
     line-height: 2;
 

@@ -24,9 +24,15 @@
 }
 
 input,
+textarea,
 .input
 {
     @extend %input;
+}
+
+textarea
+{
+    min-height: 150px;
 }
 
 select

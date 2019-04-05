@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>95css CSS Framework</title>
+    <link rel="stylesheet" href="dist/95css.css">
+</head>
+<body>
+    <nav class="nav">
+        <a href="index.html" class="nav-logo"><img src="https://66.media.tumblr.com/60ddceb91f82e5cdd79d68b41639664a/tumblr_oa3zzstTeK1qzl9pho1_400.gif" alt=""></a>
+        <a href="index.html" class="nav-link">General</a>
+        <a href="typography.html" class="nav-link active">Typography</a>
+        <a href="forms.html" class="nav-link">Forms</a>
+        <a href="#" class="nav-link" data-micromodal-trigger="modal">Open modal</a>
+    </nav>
+    <div class="container">
+        <h1>Heading one</h1>
+        <h2>Heading two</h2>
+        <h3>Heading three</h3>
+        <h4>Heading four</h4>
+        <h5>Heading five</h5>
+        <h6>Heading six</h6>
+        <p>
+            Lorem ipsum dolor sit amet, <mark>marked text</mark> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, <del>deleted text</del> quis <u>underlined text</u> ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in <small>small text</small> voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat <b>bold text</b> proident, sunt in culpa qui <code>&lt;p&gt;this is coded text&lt;/p&gt;</code> officia deserunt mollit anim id est laborum.
+        </p>
+        <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        </blockquote>
+        <a href="#">this is a link</a>
+        <button type="button" name="button" class="btn">This is a button</button>
+        <div class="row">
+            <div class="col-12">
+                <h2>Cards</h2>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Card #1</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Card #2</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">Card #3</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal" class="modal" aria-hidden="true">
+        <div tabindex="-1" data-micromodal-close class="modal-bg">
+            <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" class="modal-dialog">
+                <header class="modal-header">
+                    <h2 id="modal-1-title" class="modal-title">Modal Title</h2>
+                    <button aria-label="Close modal" data-micromodal-close class="modal-close">X</button>
+                </header>
+                <div id="modal-1-content" class="modal-body">
+                    <h3>Modal content</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button data-micromodal-close class="btn">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/95css.js" charset="utf-8"></script>
+</body>
+</html>
