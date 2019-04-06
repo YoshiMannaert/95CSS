@@ -1,3 +1,11 @@
+.has-bottom-nav
+{
+    padding-bottom: 80px;
+}
+.has-top-nav
+{
+    padding-top: 80px;
+}
 .nav
 {
     position: relative;
@@ -11,6 +19,7 @@
     background-color: $grey;
     box-shadow: 0 2px 2px rgba(0,0,0,.2);
 
+    justify-content: space-between;
     align-items: center;
     &:before
     {
@@ -27,20 +36,22 @@
 
         background-color: $grey-light;
     }
-    &.nav-top
-    {
-        position: sticky;
-        z-index: 20;
-        top: 0;
-    }
+    &.nav-top,
     &.nav-bottom
     {
         position: fixed;
         z-index: 20;
-        bottom: 0;
 
         width: 100%;
         margin: 0;
+    }
+    &.nav-top
+    {
+        top: 0;
+    }
+    &.nav-bottom
+    {
+        bottom: 0;
 
         border-top: 2px solid $white;
         border-bottom: none;
@@ -53,26 +64,18 @@
     }
 }
 
-.nav-logo
+.nav-logo,
+.nav-logo:link,
+.nav-logo:visited,
+.nav-logo:hover,
+.nav-logo:active
 {
-    img
-    {
-        max-height: 40px;
-    }
-}
-.nav-link,
-.nav-link:link,
-.nav-link:visited,
-.nav-link:hover,
-.nav-link:active
-{
-    line-height: 2;
+    display: inline-block;
 
-    position: relative;
-
+    min-width: 150px;
     height: 40px;
-    margin: 0 2px;
-    padding: 4px 40px 4px 10px;
+    margin-right: 4px;
+    padding: 2px 20px 2px 2px;
 
     color: $black;
     border: 2px solid;
@@ -99,22 +102,148 @@
         border-bottom-color: $grey-dark;
         border-left-color: $grey-light;
     }
-    &:hover
+    img
     {
-        color: $black;
+        max-height: 32px;
     }
+}
+.nav-menu-btn
+{
+    display: block;
+
+    height: 40px;
+    @media screen and (min-width: 768px)
+    {
+        display: none;
+    }
+}
+
+.nav-menu
+{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+
+    display: none;
+
+    width: 100%;
+
+    color: $black;
+    border: 2px solid;
+    border-top-color: $white;
+    border-right-color: $black;
+    border-bottom-color: $black;
+    border-left-color: $white;
+    background-color: $grey;
+
+    flex-flow: column;
+
     &.active
     {
-        border-top-color: $black;
-        border-right-color: $white;
-        border-bottom-color: $white;
-        border-left-color: $black;
+        display: flex;
+    }
+    &:before
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        content: '';
+
+        border: 2px solid;
+        border-top-color: $grey-light;
+        border-right-color: $grey-dark;
+        border-bottom-color: $grey-dark;
+        border-left-color: $grey-light;
+    }
+    @media screen and (min-width: 768px)
+    {
+        position: relative;
+
+        display: flex;
+
+        border: none;
+
+        flex-flow: row;
         &:before
         {
-            border-top-color: $grey-dark;
-            border-right-color: $grey-light;
-            border-bottom-color: $grey-light;
-            border-left-color: $grey-dark;
+            content: none;
+        }
+    }
+}
+
+.nav-link,
+.nav-link:link,
+.nav-link:visited,
+.nav-link:hover,
+.nav-link:active
+{
+    line-height: 2;
+
+    position: relative;
+
+    display: block;
+
+    height: 40px;
+    margin: 0 2px;
+    padding: 4px 40px 4px 10px;
+
+    color: $black;
+
+    &:hover
+    {
+        color: $white;
+        background-color: $blue;
+        @media screen and (min-width: 768px)
+        {
+            color: $black;
+            background-color: $grey;
+        }
+    }
+    @media screen and (min-width: 768px)
+    {
+        border: 2px solid;
+        border-top-color: $white;
+        border-right-color: $black;
+        border-bottom-color: $black;
+        border-left-color: $white;
+        background-color: $grey;
+        &:before
+        {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            display: block;
+
+            content: '';
+
+            border: 2px solid;
+            border-top-color: $grey-light;
+            border-right-color: $grey-dark;
+            border-bottom-color: $grey-dark;
+            border-left-color: $grey-light;
+        }
+        &.active
+        {
+            border-top-color: $black;
+            border-right-color: $white;
+            border-bottom-color: $white;
+            border-left-color: $black;
+            background-image: url('bg-pattern.png');
+            &:before
+            {
+                border-top-color: $grey-dark;
+                border-right-color: $grey-light;
+                border-bottom-color: $grey-light;
+                border-left-color: $grey-dark;
+            }
         }
     }
 }
