@@ -51,15 +51,35 @@ select
 
 fieldset
 {
+    position: relative;
+
     margin-bottom: 20px;
     padding: 10px;
 
     border: 2px solid;
-    border-top-color: $black;
+    border-top-color: $grey-dark;
     border-right-color: $white;
     border-bottom-color: $white;
-    border-left-color: $black;
+    border-left-color: $grey-dark;
     background-color: $grey;
+    &:before
+    {
+        position: absolute;
+        top: 11px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        display: block;
+
+        content: '';
+
+        border: 2px solid;
+        border-top-color: $grey-light;
+        border-right-color: $grey-dark;
+        border-bottom-color: $grey-dark;
+        border-left-color: $grey-light;
+    }
 }
 
 legend
@@ -67,9 +87,14 @@ legend
     font-size: .9rem;
     font-weight: bold;
 
+    position: relative;
+
     display: inline-block;
 
     width: auto;
+    padding: 0 3px;
+
+    background-color: $grey;
 }
 
 .input-field
