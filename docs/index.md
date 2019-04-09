@@ -1,3 +1,4 @@
+![preview](../preview.jpg)
 # 95CSS Docs
 
 ## Table of contents
