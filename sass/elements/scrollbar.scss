@@ -1,0 +1,67 @@
+/* width */
+::-webkit-scrollbar {
+    width: 32px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+opacity: 0.8;
+background-image:  repeating-linear-gradient(45deg, #DEDEDE 25%, transparent 25%, transparent 75%, #DEDEDE 75%, #DEDEDE), repeating-linear-gradient(45deg, #DEDEDE 25%, #ffffff 25%, #ffffff 75%, #DEDEDE 75%, #DEDEDE);
+background-position: 0 0, 3px 3px;
+background-size: 6px 6px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-gray-200);
+    box-shadow: var(--shadow-outer-3);
+}
+
+::-webkit-scrollbar-button {
+    display: block;
+    height: 32px;
+    background-color: var(--color-gray-200);
+    box-shadow: var(--shadow-outer-3);
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
+
+::-webkit-scrollbar-button:vertical:start:decrement {
+    background-position: center;
+    background-size: 12px;
+    background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0%209.42999L12%209.42999V7.71571L0%207.71571V9.42999ZM1.71429%207.71569L10.2857%207.71569V6.0014H8.57143V4.28712L6.85714%204.28712V2.57283H5.14286V4.28712H3.42857V6.0014L1.71429%206.0014V7.71569Z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E');
+}
+
+::-webkit-scrollbar-button:vertical:start:increment {
+    display: none;
+}
+
+::-webkit-scrollbar-button:vertical:end:decrement {
+    display: none;
+}
+
+::-webkit-scrollbar-button:vertical:end:increment {
+    background-position:center;
+    background-size: 12px;
+    background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M12%202.57001H0V4.28429H12V2.57001ZM10.2857%204.28431H1.71429V5.9986H3.42857V7.71288H5.14286V9.42717H6.85714V7.71288H8.57143V5.9986H10.2857V4.28431Z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E');
+}
+::-webkit-scrollbar-button:horizontal:start:decrement {
+    width: 22px;
+    background-position: center;
+    background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M9.42859%2012.0015L9.42859%200.00146484L7.7143%200.00146484L7.7143%2012.0015H9.42859ZM7.71429%2010.2872L7.71429%201.71575L6%201.71575V3.43004H4.28571L4.28571%205.14432H2.57143V6.85861H4.28571V8.57289H6L6%2010.2872H7.71429Z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E');
+}
+
+::-webkit-scrollbar-button:horizontal:start:increment {
+    display: none;
+}
+
+::-webkit-scrollbar-button:horizontal:end:decrement {
+    display: none;
+}
+
+::-webkit-scrollbar-button:horizontal:end:increment {
+    width: 22px;
+    background-position:center right;
+    background-image: url('data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M2.57141%200.00140381L2.57141%2012.0014L4.2857%2012.0014L4.2857%200.00140373L2.57141%200.00140381ZM4.28571%201.71569L4.28571%2010.2871L6%2010.2871L6%208.57283L7.71429%208.57283L7.71429%206.85855L9.42857%206.85855L9.42857%205.14426L7.71429%205.14426L7.71429%203.42997L6%203.42997L6%201.71569L4.28571%201.71569Z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E');
+}

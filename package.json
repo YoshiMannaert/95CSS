@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "sass --style=expanded --source-map 95.scss css/95.css",
-    "minify": "postcss css/95.css --no-map --use cssnano --output css/95.min.css"
+    "minify": "postcss css/95.css --no-map --use cssnano --output css/95.min.css",
+    "develop": "npm run build -- --watch",
+    "publish": "npm run build && npm run minify"
   },
   "repository": {
     "type": "git",

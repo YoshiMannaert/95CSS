@@ -1,0 +1,27 @@
+.dialog-body {
+    padding: var(--spacing-3);
+}
+
+dialog,
+.dialog {
+    &.is-sm {
+        .dialog-body {
+            padding: 0px;
+        }
+    }
+    &.is-md {
+        .dialog-body {
+            padding: var(--spacing-3);
+        }
+    }
+    &.is-lg {
+        .dialog-body {
+            padding: var(--spacing-4);
+        }
+    }
+    &.is-xl {
+        .dialog-body {
+            padding: var(--spacing-6);
+        }
+    }
+}

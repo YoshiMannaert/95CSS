@@ -1,0 +1,10 @@
+.input-group {
+
+    &:has(input[disabled]) label {
+        color: var(--color-gray-300);
+    }
+    
+    &.is-horizontal label {
+        min-width: 80px;
+    }
+}

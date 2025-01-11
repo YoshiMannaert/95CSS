@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/95.css">
+    <style>
+        body {
+            padding: var(--spacing-10);
+        }
+        .slot {
+            background-color: var(--color-white);
+            padding: 40px;
+            box-shadow: var(--shadow-inner-3);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <dialog open class="is-fullwidth is-xl">
+        <div class="dialog-header">
+            <h2>Buttons</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="toolbar">
+                <button>Default button</button>
+                <button class="is-highlighted">Highlighted button</button>
+                <button class="is-focused">Focused button</button>
+                <button class="is-active">Active button</button>
+                <button disabled>Disabled button</button>
+            </div>
+        </div>
+    </dialog>
+    <br>
+    <dialog open class="is-fullwidth is-xl">
+        <div class="dialog-header">
+            <h2>Toolbar and button group</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="toolbar">
+                <button>Toolbar button 1</button>
+                <button>Toolbar button 2</button>
+                <button>Toolbar button 3</button>
+                <div class="btn-group">
+                    <button>btn-group 1</button>
+                    <button>btn-group 2</button>
+                    <button>btn-group 3</button>
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <br>
+    <dialog open class="is-fullwidth is-xl">
+        <div class="dialog-header">
+            <h2>Inputs</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="field-group">
+                <div class="input-group">
+                    <label for="first_name">First name</label>
+                    <input type="text">
+                </div>
+        
+                <div class="input-group">
+                    <label for="first_name">Email</label>
+                    <input type="text" disabled value="christopher.johnson@gmail.com">
+                </div>
+
+                <div class="input-group">
+                    <label for="select">Select</label>
+                    <select name="select" id="select">
+                        <option value="">Default option</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="select_disabled">Select disabled</label>
+                    <select name="select_disabled" id="select_disabled" disabled>
+                        <option value="">Default option</option>
+                    </select>
+                </div>
+    
+                <div class="input-group">
+                    <label for="color">Color</label>
+                    <input type="color" name="color" id="color">
+                </div>
+                <div class="input-group">
+                    <label for="color_disabled">Color disabled</label>
+                    <input type="color" disabled name="color_disabled" id="color_disabled">
+                </div>
+
+                <div class="input-group">
+                    <label for="number">Number</label>
+                    <input type="number" name="number" id="number">
+                </div>
+
+                <div class="input-group">
+                    <label for="range">Range</label>
+                    <input type="range" name="range" id="range">
+                </div>
+
+                <fieldset>
+                    <legend>Fieldset</legend>
+                    <div style="display:flex;flex-direction:column;gap:24px">
+                        <div class="input-group">
+                            <label for="fieldset-1">First name</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-group">
+                            <label for="fieldset-2">First name</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="field-group">
+                <div class="input-group is-horizontal">
+                    <label for="first_name">First name</label>
+                    <input type="text" value="Christopher">
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <br>
+    <dialog open class="is-sm">
+        <div class="dialog-header">
+            <h2>Dialog is-sm</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="slot">
+                <p>Slot</p>
+            </div>
+        </div>
+    </dialog>
+    <br>
+    <dialog open>
+        <div class="dialog-header">
+            <h2>Dialog is-md (default)</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="slot">
+                <p>Slot</p>
+            </div>
+        </div>
+    </dialog>
+    <br>
+    <dialog open class="is-lg">
+        <div class="dialog-header">
+            <h2>Dialog is-lg</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="slot">
+                <p>Slot</p>
+            </div>
+        </div>
+    </dialog>
+    <br>
+    <dialog open class="is-xl">
+        <div class="dialog-header">
+            <h2>Dialog is-xl</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="slot">
+                <p>Slot</p>
+            </div>
+        </div>
+    </dialog>
+</body>
+</html>
