@@ -163,23 +163,23 @@ body {
   background: var(--color-blue);
 }
 
-button {
+button:not(.tab) {
   background-color: var(--color-gray-200);
   box-shadow: var(--shadow-default-button-default);
   position: relative;
   padding: 12px 14px;
 }
-button:not([disabled]):not(.disabled) {
+button:not(.tab):not([disabled]):not(.disabled) {
   cursor: pointer;
 }
-button.is-highlighted {
+button:not(.tab).is-highlighted {
   box-shadow: var(--shadow-default-button-highlighted);
 }
-button:not(:active):focus, button:not(:active).is-focused {
+button:not(.tab):not(:active):focus, button:not(.tab):not(:active).is-focused {
   box-shadow: var(--shadow-default-button-focused);
   outline: none;
 }
-button:not(:active):focus::after, button:not(:active).is-focused::after {
+button:not(.tab):not(:active):focus::after, button:not(.tab):not(:active).is-focused::after {
   content: "";
   display: block;
   border: 1.5px dashed var(--color-black);
@@ -189,10 +189,10 @@ button:not(:active):focus::after, button:not(:active).is-focused::after {
   top: 6px;
   left: 6px;
 }
-button:active, button.is-active {
+button:not(.tab):active, button:not(.tab).is-active {
   box-shadow: var(--shadow-default-button-active);
 }
-button:disabled, button.is-disabled {
+button:not(.tab):disabled, button:not(.tab).is-disabled {
   box-shadow: var(--shadow-default-button-disabled);
   text-shadow: var(--shadow-text-disabled);
 }
@@ -456,6 +456,38 @@ progress::-moz-progress-bar {
   background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M2.57141%200.00140381L2.57141%2012.0014L4.2857%2012.0014L4.2857%200.00140373L2.57141%200.00140381ZM4.28571%201.71569L4.28571%2010.2871L6%2010.2871L6%208.57283L7.71429%208.57283L7.71429%206.85855L9.42857%206.85855L9.42857%205.14426L7.71429%205.14426L7.71429%203.42997L6%203.42997L6%201.71569L4.28571%201.71569Z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E");
 }
 
+.tab {
+  background-color: var(--color-gray-200);
+  box-shadow: var(--shadow-default-button-default);
+  position: relative;
+  box-shadow: var(--shadow-outer-5);
+  padding: 8px 10px;
+  height: 32px;
+}
+.tab:before, .tab:after, .tab:active:after, .tab:not(:active):focus:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent 0, transparent 4px, var(--color-white) 4px, var(--color-white) calc(100% - 4px), transparent calc(100% - 4px), transparent 100%);
+  position: absolute;
+  top: -4px;
+  left: 0;
+}
+.tab:after, .tab:active:after, .tab:not(:active):focus:after {
+  top: -2px;
+  background: linear-gradient(to right, transparent 0, transparent 2px, var(--color-white) 2px, var(--color-white) 4px, var(--color-gray-200) 4px, var(--color-gray-200) calc(100% - 4px), var(--color-black) calc(100% - 4px), var(--color-black) calc(100% - 2px), transparent calc(100% - 2px), transparent 100%);
+}
+.tab:active, .tab.is-active, .tab:not(:active):focus {
+  box-shadow: var(--shadow-outer-5);
+  padding: 10px;
+  height: 40px;
+  margin-right: -4px;
+  margin-left: -4px;
+  margin-bottom: -2px;
+  z-index: 99;
+}
+
 .toolbar {
   display: flex;
   gap: var(--spacing-5);
@@ -538,6 +570,15 @@ dialog.is-xl .dialog-body,
   display: flex;
   flex-direction: column;
   gap: var(--spacing-5);
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  gap: 0;
+  height: 40px;
+  border-bottom: 2px solid white;
 }
 
 /*# sourceMappingURL=95css.css.map */

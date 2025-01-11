@@ -1,4 +1,4 @@
-button {
+button:not(.tab){
     background-color: var(--color-gray-200);
     box-shadow: var(--shadow-default-button-default);
     position: relative;
