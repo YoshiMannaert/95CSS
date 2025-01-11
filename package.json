@@ -1,27 +1,31 @@
 {
-    "name": "millie",
-    "version": "0.0.1",
-    "description": "A Windows 955-styled CSS Framework",
-    "main": "index.js",
-    "scripts": {
-        "dev": "npm run development",
-        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-        "prod": "npm run production",
-        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-    },
-    "author": "Mosh",
-    "license": "ISC",
-    "devDependencies": {
-        "cross-env": "^5.2.0",
-        "laravel-mix": "^4.0.15",
-        "resolve-url-loader": "^2.3.1",
-        "sass": "^1.17.4",
-        "sass-loader": "^7.1.0",
-        "vue-template-compiler": "^2.6.10"
-    },
-    "dependencies": {
-        "micromodal": "^0.3.2"
-    }
+  "name": "95css",
+  "version": "0.1.0",
+  "description": "A windows 95-style CSS framework",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass --style=expanded --source-map 95.scss css/95.css",
+    "minify": "postcss css/95.css --no-map --use cssnano --output css/95.min.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoshiMannaert/95CSS.git"
+  },
+  "keywords": [
+    "CSS",
+    "framework",
+    "Windows",
+    "95"
+  ],
+  "author": "Yoshi Mannaert",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YoshiMannaert/95CSS/issues"
+  },
+  "homepage": "https://github.com/YoshiMannaert/95CSS#readme",
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "postcss-cli": "^11.0.0",
+    "sass": "^1.83.1"
+  }
 }
