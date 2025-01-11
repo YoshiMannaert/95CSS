@@ -357,14 +357,21 @@ legend {
 progress {
   width: 100%;
   appearance: none;
-  height: 36px;
-}
-progress::-webkit-progress-bar {
   background-color: var(--color-gray-200);
   box-shadow: var(--shadow-inner-1);
+  height: 36px;
   padding: 4px;
+  border: none;
+}
+progress::-webkit-progress-bar {
+  background-color: transparent;
 }
 progress::-webkit-progress-value {
+  background-color: var(--color-blue);
+  background-image: linear-gradient(90deg, var(--color-blue) 90%, var(--color-gray-200) 90%);
+  background-size: 20px 32px;
+}
+progress::-moz-progress-bar {
   background-color: var(--color-blue);
   background-image: linear-gradient(90deg, var(--color-blue) 90%, var(--color-gray-200) 90%);
   background-size: 20px 32px;
