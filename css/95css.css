@@ -197,7 +197,7 @@ button:not(.tab):disabled, button:not(.tab).is-disabled {
   text-shadow: var(--shadow-text-disabled);
 }
 
-input:not([type=range]) {
+input:not([type=range]):not([type=checkbox]):not([type=radio]) {
   box-shadow: var(--shadow-input);
   background-color: var(--color-white);
   border: none;
@@ -205,12 +205,46 @@ input:not([type=range]) {
   width: 100%;
   padding: 8px 10px 4px;
 }
-input:not([type=range]):focus {
+input:not([type=range]):not([type=checkbox]):not([type=radio]):focus {
   outline: none;
 }
-input:not([type=range]):disabled, input:not([type=range]).is-disabled {
+input:not([type=range]):not([type=checkbox]):not([type=radio]):disabled, input:not([type=range]):not([type=checkbox]):not([type=radio]).is-disabled {
   background-color: var(--color-gray-200);
   color: var(--color-gray-300);
+}
+
+input[type=checkbox] {
+  width: 24px;
+  height: 24px;
+  box-shadow: var(--shadow-inner-4);
+  background-color: var(--color-white);
+  position: relative;
+}
+input[type=checkbox]:focus {
+  outline: none;
+}
+input[type=checkbox]:checked {
+  accent-color: var(--color-white);
+}
+input[type=checkbox]:checked:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: var(--color-white);
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.2857 0H12V1.71429L12 3.42857V5.14286H10.2857V6.85714H8.57143V8.57143H6.85714V10.2857H5.14286V12H3.42857V10.2857H1.71429V8.57143H0V6.85714V5.14286V3.42857H1.71429V5.14286H3.42857V6.85714H5.14286V5.14286H6.85714V3.42857H8.57143V1.71429H10.2857V0Z' fill='black'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+input[type=checkbox]:disabled {
+  background-color: var(--color-gray-200);
+}
+input[type=checkbox]:disabled:before {
+  background-color: var(--color-gray-200);
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M11.9957 1.70996H13.71V3.42425L13.71 5.13853V6.85282H11.9957V8.5671H10.2814V10.2814H8.56713V11.9957H6.85285V13.71H5.13856V11.9957H3.42428V10.2814H1.70999V8.5671V6.85282V5.13853H3.42428V6.85282H5.13856V8.5671H6.85285V6.85282H8.56713V5.13853H10.2814V3.42425H11.9957V1.70996Z' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.2857 0H12V1.71429L12 3.42857V5.14286H10.2857V6.85714H8.57143V8.57143H6.85714V10.2857H5.14286V12H3.42857V10.2857H1.71429V8.57143H0V6.85714V5.14286V3.42857H1.71429V5.14286H3.42857V6.85714H5.14286V5.14286H6.85714V3.42857H8.57143V1.71429H10.2857V0Z' fill='%23808080'/%3E%3C/svg%3E%0A");
 }
 
 select {
@@ -327,6 +361,25 @@ input[type=range]::-moz-range-thumb {
 }
 .input-group.is-horizontal label {
   min-width: 80px;
+}
+.input-group:has(input[type=checkbox]:focus) label:after {
+  content: "";
+  display: block;
+  border: 1.5px dashed var(--color-black);
+  width: calc(100% - 24px + 2px);
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 26px;
+}
+
+label.checkbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+  width: fit-content;
 }
 
 .input-group {

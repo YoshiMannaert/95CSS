@@ -1,4 +1,4 @@
-input:not([type="range"]) {
+input:not([type="range"]):not([type="checkbox"]):not([type="radio"]) {
     box-shadow: var(--shadow-input);
     background-color: var(--color-white);
     border: none;
