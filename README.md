@@ -58,5 +58,9 @@ Currently, no JavaScript is included in the framework. While this may change in 
 ## Maintenance
 This repository is being actively maintained. Please be aware that we are still in an early stage and any and all styling might change in the future. This includes breaking changes.
 
+## Design
+A community Figma file is available [here](https://www.figma.com/community/file/1460048576678081116/95css).
+Please note that this file might not be actively updated.
+
 ## Copyright and license
 Code copyright 2025 Yoshi Mannaert. Code released under the MIT license.
