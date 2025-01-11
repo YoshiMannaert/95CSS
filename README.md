@@ -40,7 +40,7 @@ Including
 - Range
 - Color
 
-## Dialogs
+### Dialogs
 Comes in different sizes
 Can be used for modals/popups as well as a card component
 
