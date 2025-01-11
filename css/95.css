@@ -390,12 +390,10 @@ progress::-moz-progress-bar {
   background-size: 20px 32px;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 32px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background-color: #ffffff;
   opacity: 0.8;
@@ -404,7 +402,6 @@ progress::-moz-progress-bar {
   background-size: 6px 6px;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--color-gray-200);
   box-shadow: var(--shadow-outer-3);
