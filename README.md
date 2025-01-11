@@ -35,6 +35,7 @@ Including
 ### Inputs
 - Text inputs
 - Number inputs
+- Checkboxes
 - Selects
   - Including [multiple]
 - Range
