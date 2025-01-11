@@ -1,0 +1,30 @@
+.input-group {
+
+    &:has(input[disabled]) label {
+        color: var(--color-gray-300);
+    }
+    
+    &.is-horizontal label {
+        min-width: 80px;
+    }
+
+    &:has(input[type="checkbox"]:focus) label:after {
+        content: "";
+        display: block;
+        border: 1.5px dashed var(--color-black);
+        width: calc(100% - 24px + 2px); // 24px input width + 2px so it doesn't stick to the text
+        height: calc(100%);
+        position: absolute;
+        top: 0px;
+        left: 26px; // Move 2px to the left of the text so it doesn't stick to it
+    }
+}
+
+label.checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    width: fit-content;
+}

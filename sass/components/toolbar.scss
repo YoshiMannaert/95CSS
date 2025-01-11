@@ -1,0 +1,8 @@
+.toolbar {
+    display: flex;
+    gap: var(--spacing-5);
+    .btn-group {
+        display: flex;
+        gap: 0;
+    }
+}

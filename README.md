@@ -3,38 +3,65 @@
 # 95CSS
 ## A Windows 95 style CSS framework
 
-![Version 0.2.0](https://img.shields.io/badge/version-0.1.0-brightgreen.svg)
+![Version 0.1.1](https://img.shields.io/badge/version-0.1.1-brightgreen.svg)
+![GitHub License](https://img.shields.io/github/license/YoshiMannaert/95CSS)
+![Maintenance](https://img.shields.io/maintenance/yes/2025)
+<!-- ![GitHub file size in bytes](https://img.shields.io/github/size/YoshiMannaert/95css/css%2F95.min.css) -->
 
+### Browser compatibility
+![Chrome compatibility](https://img.shields.io/badge/Chrome-Great-brightgreen)
+![Edge compatibility](https://img.shields.io/badge/Edge-Great-brightgreen)
+![Safari compatibility](https://img.shields.io/badge/Safari-Good-green)
+![Firefox compatibility](https://img.shields.io/badge/Firefox-Okay-yellow)
+
+## About
 95CSS is a simple CSS framework in the style of the Windows95 O.S.
-
-It uses both Bootstraps reboot and grid system but, even though a lot of class names are similar, it is NOT a Bootstrap theme.
-
-*Suggestions  / pull requests to make this framework look more like Windows 95 / to optimize the code are welcome*
+While we try to get as close as possible to the original Windows95 styling, we have made changes and updates in some places to make it more useable for the modern screen.
 
 ## Getting started
-To get started simply add the `dist/95css.css`-file to your page.
+To get started, simply include the `css/95css.css` or `css/95css.min.css` file. No downloaden package is availeble atm.
 
-## Styling
-### Grid
-The grid used is the bootstrap 4 grid and usses the same bootstrap classes.
-You can use `.container`, `.container-fluid`, `.row` and all the `.col-` classes.
-
-### General
-The typography has been given basic styling including it's own simple windows-95 like font.
-The body has been given a default background-color.
+## Styled components
+At this moment, the following components have been styled
 
 ### Buttons
-`button`, `input[type=submit]` and `.btn` have been given a default button styling to look like the windows 95 buttons. There are currently no extra classes like `primary`, `secondary`, `light`, `dark`,...
+Including
+- Default state
+- Active state
+- Focused state
+- Disabled state
+- Highlighted state (Think of this as a "primary" button)
 
 ### Inputs
-Most inputs have been styled, including `select`s but the input styling could be improved / built upon.
+- Text inputs
+- Number inputs
+- Checkboxes
+- Selects
+  - Including [multiple]
+- Range
+- Color
 
-### Cards
-Cards have been styled to look like the popups you'd see in the O.S. They have a card-header, a card-title and card-body. Modals and Cards share the same basic styling.
+### Dialogs
+Comes in different sizes
+Can be used for modals/popups as well as a card component
+
+### Other
+- Tabs
+- Fieldsets
+- Legends
+- Dividers (`hr`'s)
+- Progress bars
+- Scrollbars
 
 ## Javascript
-### Modals
-Currently the only javascript that's part of this framework is [Micromodal.js](https://micromodal.now.sh). This is used to create WAI-ARIA guidelines compliant modals in a simple manner, but if wanted could be easily removed or switched with a different modal plugin.
-The modal styling is done completely in CSS and builds on the card styling.
+Currently, no JavaScript is included in the framework. While this may change in the future to enhance interactivity for certain components—such as tabs, modals, or dropdowns—or to enable more advanced styling, our focus is on providing robust CSS styles that make it easy for you to implement any necessary JavaScript yourself.
 
-Make sure to add `dist/95css.js` to your page to be able to use the modals.
+## Maintenance
+This repository is being actively maintained. Please be aware that we are still in an early stage and any and all styling might change in the future. This includes breaking changes.
+
+## Design
+A community Figma file is available [here](https://www.figma.com/community/file/1460048576678081116/95css).
+Please note that this file might not be actively updated.
+
+## Copyright and license
+Code copyright 2025 Yoshi Mannaert. Code released under the MIT license.

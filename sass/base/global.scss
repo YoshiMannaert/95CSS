@@ -1,0 +1,17 @@
+body {
+  background-color: var(--color-teal);
+  color: var(--color-black);
+  font-family: 'w95fa';
+  font-size: 18px;
+  line-height: 20px;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: var(--color-white);
+  background: var(--color-blue);
+}
+  
+::selection {
+  color: var(--color-white);
+  background: var(--color-blue);
+}

@@ -1,0 +1,41 @@
+button:not(.tab){
+    background-color: var(--color-gray-200);
+    box-shadow: var(--shadow-default-button-default);
+    position: relative;
+    padding: 12px 14px;
+    
+    &:not([disabled]):not(.disabled) {
+        cursor: pointer;
+    }
+
+    &.is-highlighted {
+        box-shadow: var(--shadow-default-button-highlighted);
+    }
+
+    &:not(:active):focus,
+    &:not(:active).is-focused {
+        box-shadow: var(--shadow-default-button-focused);
+        outline: none;
+        &::after {
+            content: "";
+            display: block;
+            border: 1.5px dashed var(--color-black);
+            width: calc(100% - 14px);
+            height: calc(100% - 14px);
+            position: absolute;
+            top: 6px;
+            left: 6px;
+        }
+    }
+
+    &:active,
+    &.is-active {
+        box-shadow: var(--shadow-default-button-active);
+    }
+
+    &:disabled,
+    &.is-disabled {
+        box-shadow: var(--shadow-default-button-disabled);
+        text-shadow: var(--shadow-text-disabled);
+    }
+}

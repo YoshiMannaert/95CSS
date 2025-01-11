@@ -1,0 +1,28 @@
+dialog,
+.dialog {
+    background-color: var(--color-gray-200);
+    box-shadow: var(--shadow-outer-3);
+    padding: var(--spacing-3);
+    position: relative;
+    border: none;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3);
+
+    &.is-sm {
+        min-width: 300px;
+    }
+    &.is-md {
+        min-width: 320px;
+    }
+    &.is-lg {
+        min-width: 340px;
+    }
+    &.is-xl {
+        min-width: 400px;
+    }
+    &.is-fullwidth {
+        width: 100%;
+    }
+}

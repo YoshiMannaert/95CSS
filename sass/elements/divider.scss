@@ -1,0 +1,12 @@
+hr {
+    border: none;
+    height: 2px;
+    width: 100%;
+    background-color: var(--color-gray-300);
+    box-shadow: 0 2px 0 var(--color-white), inset -2px 0 var(--color-white);
+    &.is-horizontal {
+        width: 2px;
+        height: 100%;
+        box-shadow: 2px 0 0 var(--color-white), inset 0 -2px 0 var(--color-white);
+    }
+}

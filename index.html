@@ -1,73 +1,298 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>95css CSS Framework</title>
-    <link rel="stylesheet" href="dist/95css.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/95css.css">
+    <style>
+        body {
+            padding: var(--spacing-10);
+        }
+        .slot {
+            background-color: var(--color-white);
+            padding: 40px;
+            box-shadow: var(--shadow-inner-3);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
 </head>
-<body class="has-bottom-nav">
-    <nav class="nav nav-bottom">
-        <a href="index.html" class="nav-logo"><img src="https://66.media.tumblr.com/60ddceb91f82e5cdd79d68b41639664a/tumblr_oa3zzstTeK1qzl9pho1_400.gif" alt="">95CSS</a>
-        <button type="button" name="button" class="nav-menu-btn">Menu</button>
-        <div class="nav-menu">
-            <a href="index.html" class="nav-link active">General</a>
-            <a href="typography.html" class="nav-link">Typography</a>
-            <a href="forms.html" class="nav-link">Forms</a>
-            <a href="top-nav.html" class="nav-link">Top Nav</a>
-            <a href="#" class="nav-link" data-micromodal-trigger="modal">Open modal</a>
+<body>
+    <dialog open class="is-fullwidth is-xl">
+        <div class="dialog-header">
+            <h2>Buttons</h2>
         </div>
-    </nav>
-    <div class="container">
-        <h1>95CSS</h1>
-        <h2>A Windows 95 style CSS framework</h2>
-        <p>95CSS is a simple CSS framework in the style of the Windows95 OS.</p>
-        <p>It uses both Bootstraps reboot and grid system but, even though a lot of class names are similar, it is <b>NOT</b> a Bootstrap theme.</p>
-
-        <h2>Getting started</h2>
-        <p>To get started simply add the <code>dist/95css.css</code>-file to your page.</p>
-
-        <h2>Styling</h2>
-        <h3>Grid</h3>
-        <p>The grid used is the bootstrap 4 grid and usses the same bootstrap classes.
-        You can use <code>.container</code>, <code>.container-fluid</code>, <code>.row</code> and all the <code>.col-</code> classes.</p>
-
-        <h3>General</h3>
-        <p>The typography has been given basic styling including it's own simple windows-95 like font.
-        The body has been given a default background-color.</p>
-
-        <h3>Buttons</h3>
-        <p><code>button</code>, <code>input[type=submit]</code> and <code>.btn</code> have been given a default button styling to look like the windows 95 buttons. There are currently no extra classes like <code>primary</code>, <code>secondary</code>, <code>light</code>, <code>dark</code>,...</p>
-
-        <h3>Inputs</h3>
-        <p>Most inputs have been styled, including <code>select</code>s but the input styling could be improved / built upon.</p>
-
-        <h3>Cards</h3>
-        <p>Cards have been styled to look like the popups you'd see in the O.S. They have a card-header, a card-title and card-body. Modals and Cards share the same basic styling.</p>
-
-        <h2>Javascript</h2>
-        <h3>Modals</h3>
-        <p>Currently the only javascript that's part of this framework is [Micromodal.js](https://micromodal.now.sh). This is used to create WAI-ARIA guidelines compliant modals in a simple manner, but if wanted could be easily removed or switched with a different modal plugin.
-        The modal styling is done completely in CSS and builds on the card styling.</p>
-
-        <p>Make sure to add <code>dist/95css.js</code> to your page to be able to use the modals.</p>
-    </div>
-
-    <div id="modal" class="modal" aria-hidden="true">
-        <div tabindex="-1" data-micromodal-close class="modal-bg">
-            <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" class="modal-dialog">
-                <header class="modal-header">
-                    <h2 id="modal-1-title" class="modal-title">Modal Title</h2>
-                    <button aria-label="Close modal" data-micromodal-close class="modal-close">X</button>
-                </header>
-                <div id="modal-1-content" class="modal-body">
-                    <h3>Modal content</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <button data-micromodal-close class="btn">close</button>
+        <div class="dialog-body">
+            <div class="toolbar">
+                <button>Default button</button>
+                <button class="is-highlighted">Highlighted button</button>
+                <button class="is-focused">Focused button</button>
+                <button class="is-active">Active button</button>
+                <button disabled>Disabled button</button>
+            </div>
+        </div>
+    </dialog>
+    <br>
+    <dialog open class="is-fullwidth is-xl">
+        <div class="dialog-header">
+            <h2>Toolbar and button group</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="toolbar">
+                <button>Toolbar button 1</button>
+                <button>Toolbar button 2</button>
+                <button>Toolbar button 3</button>
+                <div class="btn-group">
+                    <button>btn-group 1</button>
+                    <button>btn-group 2</button>
+                    <button>btn-group 3</button>
                 </div>
             </div>
         </div>
-    </div>
+    </dialog>
+    <br>
+    <dialog open class="is-fullwidth is-xl">
+        <div class="dialog-header">
+            <h2>Tabs</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="tabs" role="tablist" style="margin-bottom: 40px;">
+                <button
+                    id="tab-1"
+                    type="button"
+                    class="tab"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="tabpanel-1"
+                    tabindex="-1"
+                >
+                    Tab 1
+                </button>
+                <button
+                    id="tab-2"
+                    type="button"
+                    class="tab"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="tabpanel-2"
+                    tabindex="-1"
+                >
+                    Long tab text
+                </button>
+                <button
+                    id="tab-3"
+                    type="button"
+                    class="tab"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="tabpanel-3"
+                    tabindex="-1"
+                >
+                    Tab 3
+                </button>
+            </div>
+            <div class="tabs" role="tablist">
+                <button
+                    id="tab-1"
+                    type="button"
+                    class="tab"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="tabpanel-1"
+                    tabindex="-1"
+                >
+                    Tab 1
+                </button>
+                <button
+                    id="tab-2"
+                    type="button"
+                    class="tab is-active"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="tabpanel-2"
+                    tabindex="-1"
+                >
+                    Active tab
+                </button>
+                <button
+                    id="tab-3"
+                    type="button"
+                    class="tab"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="tabpanel-3"
+                    tabindex="-1"
+                >
+                    Tab 3
+                </button>
+            </div>
+        </div>
+    </dialog>
+    <br>
+    <dialog open class="is-fullwidth is-xl">
+        <div class="dialog-header">
+            <h2>Inputs</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="field-group">
+                <div class="input-group">
+                    <label for="first_name">First name</label>
+                    <input type="text">
+                </div>
+        
+                <div class="input-group">
+                    <label for="first_name">Email</label>
+                    <input type="text" disabled value="christopher.johnson@gmail.com">
+                </div>
 
-    <script src="dist/95css.js" charset="utf-8"></script>
+                <div class="input-group">
+                    <label for="select">Select</label>
+                    <select name="select" id="select">
+                        <option value="">Default option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="checkbox" class="checkbox">
+                        <input type="checkbox" name="checkbox" id="checkbox">
+                        Checkbox
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="checkbox_checked" class="checkbox">
+                        <input type="checkbox" name="checkbox_checked" id="checkbox_checked" checked>
+                        Checkbox - checked
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="checkbox_checkbox" class="checkbox">
+                        <input type="checkbox" name="checkbox_checkbox" id="checkbox_checkbox" disabled>
+                        Disabled checkbox
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="checkbox_checkbox_checked" class="checkbox">
+                        <input type="checkbox" name="checkbox_checkbox_checked" id="checkbox_checkbox_checked" disabled checked>
+                        Disabled checkbox - checked
+                    </label>
+                </div>
+                <div class="input-group">
+                    <label for="select_disabled">Select disabled</label>
+                    <select name="select_disabled" id="select_disabled" disabled>
+                        <option value="">Default option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="select">Select</label>
+                    <select name="select" id="select" multiple>
+                        <option value="">Default option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                </div>
+    
+                <div class="input-group">
+                    <label for="color">Color</label>
+                    <input type="color" name="color" id="color">
+                </div>
+                <div class="input-group">
+                    <label for="color_disabled">Color disabled</label>
+                    <input type="color" disabled name="color_disabled" id="color_disabled">
+                </div>
+
+                <div class="input-group">
+                    <label for="number">Number</label>
+                    <input type="number" name="number" id="number">
+                </div>
+
+                <div class="input-group">
+                    <label for="range">Range</label>
+                    <input type="range" name="range" id="range">
+                </div>
+
+                <fieldset>
+                    <legend>Fieldset</legend>
+                    <div style="display:flex;flex-direction:column;gap:24px">
+                        <div class="input-group">
+                            <label for="fieldset-1">First name</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-group">
+                            <label for="fieldset-2">First name</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="input-group">
+                    <label for="">Progress bar</label>
+                    <progress value="0.5"></progress>
+                </div>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="field-group">
+                <div class="input-group is-horizontal">
+                    <label for="first_name">First name</label>
+                    <input type="text" value="Christopher">
+                </div>
+            </div>
+        </div>
+    </dialog>
+    <br>
+    <dialog open class="is-sm">
+        <div class="dialog-header">
+            <h2>Dialog is-sm</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="slot">
+                <p>Slot</p>
+            </div>
+        </div>
+    </dialog>
+    <br>
+    <dialog open>
+        <div class="dialog-header">
+            <h2>Dialog is-md (default)</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="slot">
+                <p>Slot</p>
+            </div>
+        </div>
+    </dialog>
+    <br>
+    <dialog open class="is-lg">
+        <div class="dialog-header">
+            <h2>Dialog is-lg</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="slot">
+                <p>Slot</p>
+            </div>
+        </div>
+    </dialog>
+    <br>
+    <dialog open class="is-xl">
+        <div class="dialog-header">
+            <h2>Dialog is-xl</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="slot">
+                <p>Slot</p>
+            </div>
+        </div>
+    </dialog>
 </body>
 </html>

@@ -1,0 +1,58 @@
+.tab {
+    background-color: var(--color-gray-200);
+    box-shadow: var(--shadow-default-button-default);
+    position: relative;
+    box-shadow: var(--shadow-outer-5);
+    padding: 8px 10px;
+    height: 32px;
+
+    &:before,
+    &:after,
+    &:active:after,
+    &:not(:active):focus:after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, 
+            transparent 0,          /* Start blue */
+            transparent 4px,        /* End blue */
+            var(--color-white) 4px,       /* Start green */
+            var(--color-white) calc(100% - 4px), /* End green */
+            transparent calc(100% - 4px),  /* Start blue */
+            transparent 100%        /* End blue */
+        );
+        position: absolute;
+        top: -4px;
+        left: 0;
+    }
+    &:after,
+    &:active:after,
+    &:not(:active):focus:after {
+        top: -2px;
+        background: linear-gradient(to right, 
+            transparent 0,
+            transparent 2px,
+            var(--color-white) 2px,
+            var(--color-white) 4px,
+            var(--color-gray-200) 4px,
+            var(--color-gray-200) calc(100% - 4px),
+            var(--color-black) calc(100% - 4px),
+            var(--color-black) calc(100% - 2px),
+            transparent calc(100% - 2px),
+            transparent 100%
+        );
+    }
+
+    &:active,
+    &.is-active,
+    &:not(:active):focus {
+        box-shadow: var(--shadow-outer-5);
+        padding: 10px;
+        height: 40px;
+        margin-right: -4px;
+        margin-left: -4px;
+        margin-bottom: -2px;
+        z-index: 99;
+    }
+}

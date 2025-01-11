@@ -1,0 +1,90 @@
+* {
+    // Spacing
+    --spacing-base: 4px;
+    --spacing-1: calc(var(--spacing-base) * .5);    // 2px
+    --spacing-2: calc(var(--spacing-base));         // 4px
+    --spacing-3: calc(var(--spacing-base) * 2);     // 8px
+    --spacing-4: calc(var(--spacing-base) * 3);     // 12px
+    --spacing-5: calc(var(--spacing-base) * 4);     // 16px
+    --spacing-6: calc(var(--spacing-base) * 8);     // 32px
+    --spacing-7: calc(var(--spacing-base) * 10);    // 40px
+    --spacing-8: calc(var(--spacing-base) * 16);    // 64px
+    --spacing-9: calc(var(--spacing-base) * 20);    // 80px
+    --spacing-10: calc(var(--spacing-base) * 30);   // 120px
+
+    // Colors
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-gray-100: #DEDEDE;
+    --color-gray-200: #C3C3C3;
+    --color-gray-300: #808080;
+    --color-blue: #0F0086;
+    --color-teal: #008080;
+    --color-yellow: #FFFF00;
+    --color-red: #800000;
+
+    // Box shadows - Inner
+    --shadow-inner-1:   inset -2px -2px 0 var(--color-white), 
+                        inset 2px 2px 0 var(--color-gray-300);
+    --shadow-inner-2:   inset -2px -2px 0 var(--color-white), 
+                        inset 2px 2px 0 var(--color-gray-300),
+                        inset -4px -4px 0 var(--color-gray-300), 
+                        inset 4px 4px 0 var(--color-white);
+    --shadow-inner-3:   inset -2px -2px 0 var(--color-white), 
+                        inset 2px 2px 0 var(--color-black),
+                        inset -4px -4px 0 var(--color-gray-100), 
+                        inset 4px 4px 0 var(--color-gray-300);
+    --shadow-inner-4:   inset -2px -2px 0 var(--color-white), 
+                        inset 2px 2px 0 var(--color-gray-300),
+                        inset -4px -4px 0 var(--color-gray-200), 
+                        inset 4px 4px 0 var(--color-black);
+    // Box shadows - Outer
+    --shadow-outer-1:   inset -2px -2px 0 var(--color-black), 
+                        inset 2px 2px 0 var(--color-white),
+                        inset -4px -4px 0 var(--color-gray-300), 
+                        inset 4px 4px 0 var(--color-gray-100);
+    --shadow-outer-2:   inset 2px 2px 0 var(--color-black), 
+                        inset -4px -4px 0 var(--color-black), 
+                        inset 4px 4px 0 var(--color-white),
+                        inset -6px -6px 0 var(--color-gray-300),
+                        inset 6px 6px 0 var(--color-gray-100);
+    --shadow-outer-3:   inset -2px -2px 0 var(--color-black), 
+                        inset 2px 2px 0 var(--color-gray-100),
+                        inset -4px -4px 0 var(--color-gray-300), 
+                        inset 4px 4px 0 var(--color-white);
+    --shadow-outer-4:   inset -2px -2px 0 var(--color-black), 
+                        inset 2px 2px 0 var(--color-white),
+                        inset -4px -4px 0 var(--color-gray-300);
+    --shadow-outer-5:   inset -2px 0 0 var(--color-black), 
+                        inset 2px 0 0 var(--color-white),
+                        inset -4px 0 0 var(--color-gray-300);
+    --shadow-outer-6:   inset 2px -2px 0 var(--color-white), 
+                        inset -2px 0 0 var(--color-black),
+                        inset -4px 0 0 var(--color-gray-300);
+    --shadow-outer-7:   1.28px 1.28px 0 var(--color-white);
+
+    // Element shadows
+    --shadow-text-disabled: var(--shadow-outer-7);
+    --shadow-input: var(--shadow-inner-4);
+    --shadow-dialog: var(--shadow-outer-3);
+    --shadow-progress-bar: var(--shadow-inner-1);
+    --shadow-fieldset: var(--shadow-inner-2);
+
+    --shadow-default-button-default: var(--shadow-outer-1);
+    --shadow-default-button-highlighted: var(--shadow-outer-2);
+    --shadow-default-button-active: var(--shadow-inner-3);
+    --shadow-default-button-focused: var(--shadow-outer-2);
+    --shadow-default-button-disabled: var(--shadow-outer-1);
+
+    --shadow-action-button-default: var(--shadow-outer-3);
+    --shadow-action-button-active: var(--shadow-inner-3);
+    --shadow-action-button-focused: var(--shadow-outer-2);
+    --shadow-action-button-disabled: var(--shadow-outer-2);
+
+    --shadow-icon-button-default: var(--shadow-outer-4);
+    --shadow-icon-button-active: var(--shadow-inner-3);
+    --shadow-icon-button-focused: var(--shadow-outer-4);
+    --shadow-icon-button-disabled: var(--shadow-outer-4);
+
+    --shadow-input: var(--shadow-inner-4);
+}
