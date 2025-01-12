@@ -1,8 +1,8 @@
 {
   "name": "95css",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A windows 95-style CSS framework",
-  "main": "index.js",
+  "main": "css/95ss.min.css",
   "scripts": {
     "build": "sass --style=expanded --source-map 95css.scss css/95css.css",
     "minify": "postcss css/95css.css --no-map --use cssnano --output css/95css.min.css",
@@ -29,5 +29,13 @@
     "cssnano": "^7.0.6",
     "postcss-cli": "^11.0.0",
     "sass": "^1.83.1"
-  }
+  },
+  "files": [
+    "css",
+    "sass",
+    "fonts",
+    "95css.scss",
+    "LICENSE",
+    "README.md"
+  ]
 }
