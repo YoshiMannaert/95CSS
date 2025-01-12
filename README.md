@@ -3,7 +3,7 @@
 # 95CSS
 ## A Windows 95 style CSS framework
 
-![Version 0.1.1](https://img.shields.io/badge/version-0.1.1-brightgreen.svg)
+![Version 0.2.0](https://img.shields.io/badge/version-0.2.0-brightgreen.svg)
 ![GitHub License](https://img.shields.io/github/license/YoshiMannaert/95CSS)
 ![Maintenance](https://img.shields.io/maintenance/yes/2025)
 <!-- ![GitHub file size in bytes](https://img.shields.io/github/size/YoshiMannaert/95css/css%2F95.min.css) -->
@@ -36,6 +36,7 @@ Including
 - Text inputs
 - Number inputs
 - Checkboxes
+- Radios
 - Selects
   - Including [multiple]
 - Range

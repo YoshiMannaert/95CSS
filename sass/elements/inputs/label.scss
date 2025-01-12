@@ -8,7 +8,8 @@
         min-width: 80px;
     }
 
-    &:has(input[type="checkbox"]:focus) label:after {
+    &:has(input[type="checkbox"]:focus) label:after,
+    &:has(input[type="radio"]:focus) label:after {
         content: "";
         display: block;
         border: 1.5px dashed var(--color-black);
@@ -20,7 +21,8 @@
     }
 }
 
-label.checkbox {
+label.checkbox,
+label.radio {
     display: flex;
     flex-direction: row;
     align-items: center;
