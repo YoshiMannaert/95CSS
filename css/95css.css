@@ -219,6 +219,7 @@ input[type=checkbox] {
   box-shadow: var(--shadow-inner-4);
   background-color: var(--color-white);
   position: relative;
+  appearance: none;
 }
 input[type=checkbox]:focus {
   outline: none;
