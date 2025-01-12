@@ -492,6 +492,7 @@ progress::-moz-progress-bar {
 
 ::-webkit-scrollbar {
   width: 32px;
+  min-height: 32px;
 }
 
 ::-webkit-scrollbar-track {
@@ -537,7 +538,8 @@ progress::-moz-progress-bar {
 }
 
 ::-webkit-scrollbar-button:horizontal:start:decrement {
-  width: 22px;
+  width: 32px;
+  background-size: 12px;
   background-position: center;
   background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M9.42859%2012.0015L9.42859%200.00146484L7.7143%200.00146484L7.7143%2012.0015H9.42859ZM7.71429%2010.2872L7.71429%201.71575L6%201.71575V3.43004H4.28571L4.28571%205.14432H2.57143V6.85861H4.28571V8.57289H6L6%2010.2872H7.71429Z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E");
 }
@@ -551,9 +553,15 @@ progress::-moz-progress-bar {
 }
 
 ::-webkit-scrollbar-button:horizontal:end:increment {
-  width: 22px;
-  background-position: center right;
+  width: 32px;
+  background-size: 12px;
+  background-position: center;
   background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2212%22%20height%3D%2212%22%20viewBox%3D%220%200%2012%2012%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M2.57141%200.00140381L2.57141%2012.0014L4.2857%2012.0014L4.2857%200.00140373L2.57141%200.00140381ZM4.28571%201.71569L4.28571%2010.2871L6%2010.2871L6%208.57283L7.71429%208.57283L7.71429%206.85855L9.42857%206.85855L9.42857%205.14426L7.71429%205.14426L7.71429%203.42997L6%203.42997L6%201.71569L4.28571%201.71569Z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E");
+}
+
+::-webkit-scrollbar-corner {
+  background-color: var(--color-gray-200);
+  box-shadow: var(--shadow-outer-3);
 }
 
 .tab {
