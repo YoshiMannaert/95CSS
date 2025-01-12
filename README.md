@@ -3,7 +3,7 @@
 # 95CSS
 ## A Windows 95 style CSS framework
 
-![Version 0.2.3](https://img.shields.io/badge/version-0.2.3-brightgreen.svg)
+![Version 0.2.4](https://img.shields.io/badge/version-0.2.4-brightgreen.svg)
 ![GitHub License](https://img.shields.io/github/license/YoshiMannaert/95CSS)
 ![Maintenance](https://img.shields.io/maintenance/yes/2025)
 <!-- ![GitHub file size in bytes](https://img.shields.io/github/size/YoshiMannaert/95css/css%2F95.min.css) -->
@@ -19,18 +19,13 @@
 While we try to get as close as possible to the original Windows95 styling, we have made changes and updates in some places to make it more useable for the modern screen.
 
 ## Getting started
-To get started, you can use a CDN or import the package.
-
-### CDN
-You can use JsDelivr
+To get started, you can use a CDN or import it in your CSS.
 
 Via HTML:
 ```<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/95css@latest/css/95css.min.css" />```
 
 Via CSS import
 ```@import "https://cdn.jsdelivr.net/npm/95css@latest/css/95css.min.css";```
-
-### I
 
 ## Styled components
 At this moment, the following components have been styled
