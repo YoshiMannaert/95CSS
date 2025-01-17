@@ -3,7 +3,7 @@
 # 95CSS
 ## A Windows 95 style CSS framework
 
-![Version 0.2.4](https://img.shields.io/badge/version-0.2.4-brightgreen.svg)
+![Version 0.2.5](https://img.shields.io/badge/version-0.2.5-brightgreen.svg)
 ![GitHub License](https://img.shields.io/github/license/YoshiMannaert/95CSS)
 ![Maintenance](https://img.shields.io/maintenance/yes/2025)
 <!-- ![GitHub file size in bytes](https://img.shields.io/github/size/YoshiMannaert/95css/css%2F95.min.css) -->
