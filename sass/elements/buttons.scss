@@ -1,12 +1,12 @@
-button:not(.tab){
+button:not(.tab),
+.btn:not(.tab) {
+    color: var(--color-black);
+    text-decoration: none;
     background-color: var(--color-gray-200);
     box-shadow: var(--shadow-default-button-default);
     position: relative;
     padding: 12px 14px;
-    
-    &:not([disabled]):not(.disabled) {
-        cursor: pointer;
-    }
+    cursor: pointer;
 
     &.is-highlighted {
         box-shadow: var(--shadow-default-button-highlighted);
@@ -37,5 +37,6 @@ button:not(.tab){
     &.is-disabled {
         box-shadow: var(--shadow-default-button-disabled);
         text-shadow: var(--shadow-text-disabled);
+        cursor: default;
     }
 }
