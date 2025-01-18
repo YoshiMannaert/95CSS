@@ -1,0 +1,71 @@
+// Padding
+@for $i from 1 through 10 {
+    .p-#{$i} {
+        padding: var(--spacing-#{$i});
+    }
+
+    .p-t-#{$i} {
+        padding-top: var(--spacing-#{$i});
+    }
+
+    .p-b-#{$i} {
+        padding-bottom: var(--spacing-#{$i});
+    }
+
+    .p-l-#{$i} {
+        padding-left: var(--spacing-#{$i});
+    }
+
+    .p-r-#{$i} {
+        padding-right: var(--spacing-#{$i});
+    }
+
+    .p-x-#{$i} {
+        padding-left: var(--spacing-#{$i});
+        padding-right: var(--spacing-#{$i});
+    }
+
+    .p-y-#{$i} {
+        padding-top: var(--spacing-#{$i});
+        padding-bottom: var(--spacing-#{$i});
+    }
+}
+
+// Margin
+@for $i from 1 through 10 {
+    .m-#{$i} {
+        margin: var(--spacing-#{$i});
+    }
+
+    .m-t-#{$i} {
+        margin-top: var(--spacing-#{$i});
+    }
+
+    .m-b-#{$i} {
+        margin-bottom: var(--spacing-#{$i});
+    }
+
+    .m-l-#{$i} {
+        margin-left: var(--spacing-#{$i});
+    }
+
+    .m-r-#{$i} {
+        margin-right: var(--spacing-#{$i});
+    }
+
+    .m-x-#{$i} {
+        margin-left: var(--spacing-#{$i});
+        margin-right: var(--spacing-#{$i});
+    }
+
+    .m-y-#{$i} {
+        margin-top: var(--spacing-#{$i});
+        margin-bottom: var(--spacing-#{$i});
+    }
+}
+
+@for $i from 1 through 10 {
+    .gap-#{$i} {
+        gap: var(--spacing-#{$i});
+    }
+}

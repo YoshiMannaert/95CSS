@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacing</title>
+    <link rel="stylesheet" href="../css/95css.css" />
+    <style>
+        body {
+            padding: var(--spacing-10);
+        }
+        .slot {
+            background-color: var(--color-white);
+            box-shadow: var(--shadow-inner-4);
+            padding: var(--spacing-6);
+            width: 100%;
+        }
+        .preview {
+            background-color: teal;
+            height: 100px;
+            padding-left: var(--spacing-4);
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+    </style>
+</head>
+<body>
+    <dialog open class="w-full is-xl m-b-8">
+        <div class="dialog-header">
+            <h2>Grid</h2>
+        </div>
+        <div class="dialog-body">
+            <p class="m-b-6">A simple css grid system</p>
+
+            <div class="slot m-b-6 grid">
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog open class="w-full is-xl m-b-8">
+        <div class="dialog-header">
+            <h2>Column sizes</h2>
+        </div>
+        <div class="dialog-body">
+            <div class="slot m-b-6 grid">
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+
+                <div class="preview col col-span-2">
+                    .col.col-span-2
+                </div>
+                <div class="preview col col-span-2">
+                    .col.col-span-2
+                </div>
+                <div class="preview col col-span-2">
+                    .col.col-span-2
+                </div>
+                <div class="preview col col-span-2">
+                    .col.col-span-2
+                </div>
+                <div class="preview col col-span-2">
+                    .col.col-span-2
+                </div>
+                <div class="preview col col-span-2">
+                    .col.col-span-2
+                </div>
+
+                <div class="preview col col-span-3">
+                    .col.col-span-3
+                </div>
+                <div class="preview col col-span-3">
+                    .col.col-span-3
+                </div>
+                <div class="preview col col-span-3">
+                    .col.col-span-3
+                </div>
+                <div class="preview col col-span-3">
+                    .col.col-span-3
+                </div>
+
+                <div class="preview col col-span-4">
+                    .col.col-span-4
+                </div>
+                <div class="preview col col-span-4">
+                    .col.col-span-4
+                </div>
+                <div class="preview col col-span-4">
+                    .col.col-span-4
+                </div>
+
+                <div class="preview col col-span-5">
+                    .col.col-span-5
+                </div>
+                <div class="preview col col-span-5">
+                    .col.col-span-5
+                </div>
+                <div class="preview col col-span-2">
+                    .col.col-span-2
+                </div>
+
+                <div class="preview col col-span-6">
+                    .col.col-span-6
+                </div>
+                <div class="preview col col-span-6">
+                    .col.col-span-6
+                </div>
+
+                <div class="preview col col-span-7">
+                    .col.col-span-7
+                </div>
+                <div class="preview col col-span-5">
+                    .col.col-span-5
+                </div>
+
+                <div class="preview col col-span-8">
+                    .col.col-span-8
+                </div>
+                <div class="preview col col-span-4">
+                    .col.col-span-4
+                </div>
+
+                <div class="preview col col-span-9">
+                    .col.col-span-9
+                </div>
+                <div class="preview col col-span-3">
+                    .col.col-span-3
+                </div>
+
+                <div class="preview col col-span-10">
+                    .col.col-span-10
+                </div>
+                <div class="preview col col-span-2">
+                    .col.col-span-2
+                </div>
+
+                <div class="preview col col-span-11">
+                    .col.col-span-11
+                </div>
+                <div class="preview col col-span-1">
+                    .col.col-span-1
+                </div>
+
+                <div class="preview col col-span-12">
+                    .col.col-span-12
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog open class="w-full is-xl">
+        <div class="dialog-header">
+            <h2>Grid spacing</h2>
+        </div>
+        <div class="dialog-body">
+            <p class="m-b-6">You can use our <a href="spacing.html">spacing system</a> as modifiers for the grid</p>
+
+            <div class="slot m-b-6 grid grid-gap-6">
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+                <div class="preview col">
+                    .col
+                </div>
+            </div>
+        </div>
+    </dialog>
+</body>
+</html>

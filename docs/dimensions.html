@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/95css@latest/css/95css.min.css" />
+    <style>
+        body {
+            padding: var(--spacing-10);
+        }
+        .slot {
+            background-color: var(--color-white);
+            box-shadow: var(--shadow-inner-4);
+            padding: var(--spacing-6);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-6);
+            align-items: start;
+            justify-content: center;
+        }
+        .preview {
+            background-color: teal;
+            height: 100px;
+            padding-left: var(--spacing-4);
+            display: flex;
+            align-items: center;
+            justify-content: start;
+        }
+    </style>
+</head>
+<body>
+    <dialog open class="w-full is-xl">
+        <div class="dialog-header">
+            <h2>Grid</h2>
+        </div>
+        <div class="dialog-body">
+            <p class="m-b-6">Use the width utility classes in the following manner: <code>.w-{modifier}</code></p>
+
+            <div class="slot m-b-6">
+                <div class="w-full preview">
+                    .w-full
+                </div>
+                <div class="w-1/2 preview">
+                    .w-1/2
+                </div>
+                <div class="w-1/3 preview">
+                    .w-1/3
+                </div>
+                <div class="w-1/4 preview">
+                    .w-1/4
+                </div>
+                <div class="w-1/5 preview">
+                    .w-1/5
+                </div>
+                <div class="w-1/6 preview">
+                    .w-1/6
+                </div>
+            </div>
+        </div>
+    </dialog>
+</body>
+</html>
