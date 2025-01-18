@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacing</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/95css@latest/css/95css.min.css" />
+    <style>
+        body {
+            padding: var(--spacing-10);
+        }
+        .slot {
+            background-color: var(--color-white);
+            box-shadow: var(--shadow-inner-4);
+            padding: var(--spacing-6);
+            width: 100%;
+            display: flex;
+            gap: var(--spacing-6);
+            align-items: center;
+            justify-content: center;
+        }
+        .preview {
+            background-color: #008080;
+            opacity: 0.8;
+            background-size: 8px 8px;
+            background-image: repeating-linear-gradient(45deg, #ffffff87 0, #ffffff87 1px, #008080 0, #008080 50%);
+            width: 140px;
+            height: 100%;
+        }
+        .preview-gap {
+            background-color: #008080;
+            opacity: 0.8;
+            background-size: 8px 8px;
+            background-image: repeating-linear-gradient(45deg, #ffffff87 0, #ffffff87 1px, #008080 0, #008080 50%);
+            width: 100%;
+            display: flex;
+        }
+        .preview-content {
+            background-color: teal;
+            height: 100%;
+            padding: 8px;
+        }
+        .preview-gap .preview-content {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">95CSS</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="grid.html">Grid</a>
+            <a href="dimensions.html">Dimensions</a>
+            <a href="spacing.html" class="is-active">Spacing</a>
+        </nav>
+    </header>
+
+    <dialog open class="w-full is-xl m-b-8">
+        <div class="dialog-header">
+            <h2>General info</h2>
+        </div>
+        <div class="dialog-body">
+            <p>For the spacing utility classes we offer padding, margin and gap classes with a 1 - 10 modifier</p>
+        </div>
+    </dialog>
+
+    <dialog open class="w-full is-xl m-b-8">
+        <div class="dialog-header">
+            <h2>Padding</h2>
+        </div>
+        <div class="dialog-body">
+            <p class="m-b-6">Use the padding utility classes in the following manner: <code>.p{?-direction}-{modifier}</code></p>
+
+            <h3>Paddings on one side</h3>
+            <div class="slot m-b-6">
+                <div class="p-t-6 preview">
+                    <div class="preview-content">.p-t-6</div>
+                </div>
+                <div class="p-r-6 preview">
+                    <div class="preview-content">.p-r-6</div>
+                </div>
+                <div class="p-b-6 preview">
+                    <div class="preview-content">.p-b-6</div>
+                </div>
+                <div class="p-l-6 preview">
+                    <div class="preview-content">.p-l-6</div>
+                </div>
+            </div>
+
+            <h3>Vertical and horizontal padding</h3>
+            <div class="slot m-b-6">
+                <div class="p-y-6 preview">
+                    <div class="preview-content">.p-y-6</div>
+                </div>
+                <div class="p-x-6 preview">
+                    <div class="preview-content">.p-x-6</div>
+                </div>
+            </div>
+
+            <h3>Padding on all sides</h3>
+            <div class="slot">
+                <div class="p-6 preview">
+                    <div class="preview-content">.p-6</div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog open class="w-full is-xl m-b-8">
+        <div class="dialog-header">
+            <h2>Margin</h2>
+        </div>
+        <div class="dialog-body">
+            <p class="m-b-6">Use the margin utility classes in the following manner: <code>.m{?-direction}-{modifier}</code></p>
+
+            <h3>margin on one side</h3>
+            <div class="slot m-b-6">
+                <div class="preview">
+                    <div class="m-t-6 preview-content">.m-t-6</div>
+                </div>
+                <div class="preview">
+                    <div class="m-r-6 preview-content">.m-r-6</div>
+                </div>
+                <div class="preview">
+                    <div class="m-b-6 preview-content">.m-b-6</div>
+                </div>
+                <div class="preview">
+                    <div class="m-l-6 preview-content">.m-l-6</div>
+                </div>
+            </div>
+
+            <h3>Vertical and horizontal margin</h3>
+            <div class="slot m-b-6">
+                <div class="preview">
+                    <div class="m-y-6 preview-content">.m-y-6</div>
+                </div>
+                <div class="preview">
+                    <div class="m-x-6 preview-content">.m-x-6</div>
+                </div>
+            </div>
+
+            <h3>Margin on all sides</h3>
+            <div class="slot">
+                <div class="preview">
+                    <div class="m-6 preview-content">.m-6</div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog open class="w-full is-xl m-b-8">
+        <div class="dialog-header">
+            <h2>Gaps</h2>
+        </div>
+        <div class="dialog-body">
+            <p class="m-b-6">Use the gap utility classes in the following manner: <code>.gap-{modifier}</code></p>
+
+            <div class="slot">
+                <div class="preview-gap gap-6">
+                    <div class="preview-content">item</div>
+                    <div class="preview-content">item</div>
+                    <div class="preview-content">item</div>
+                </div>
+            </div>
+        </div>
+    </dialog>
+</body>
+</html>

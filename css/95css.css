@@ -691,6 +691,53 @@ dialog.is-xl .dialog-body,
   gap: var(--spacing-5);
 }
 
+header,
+.header {
+  background-color: var(--color-gray-200);
+  box-shadow: var(--shadow-outer-4);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-3);
+}
+
+header nav,
+.nav {
+  display: flex;
+  gap: var(--spacing-3);
+}
+
+header nav a,
+.nav-item,
+.logo {
+  color: var(--color-black);
+  text-decoration: none;
+  background-color: var(--color-gray-200);
+  box-shadow: var(--shadow-outer-4);
+  position: relative;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  min-width: 160px;
+}
+header nav a:active, header nav a.is-active,
+.nav-item:active,
+.nav-item.is-active,
+.logo:active,
+.logo.is-active {
+  box-shadow: var(--shadow-inner-3);
+}
+
+.logo {
+  min-width: 0;
+}
+
 .tabs {
   display: flex;
   flex-direction: row;
