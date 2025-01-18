@@ -3,7 +3,7 @@
 # 95CSS
 ## A Windows 95 style CSS framework
 
-![Version 0.3.0](https://img.shields.io/badge/version-0.3.0-brightgreen.svg)
+![Version 0.4.0](https://img.shields.io/badge/version-0.4.0-brightgreen.svg)
 ![GitHub License](https://img.shields.io/github/license/YoshiMannaert/95CSS)
 ![Maintenance](https://img.shields.io/maintenance/yes/2025)
 <!-- ![GitHub file size in bytes](https://img.shields.io/github/size/YoshiMannaert/95css/css%2F95.min.css) -->
@@ -59,6 +59,7 @@ Can be used for modals/popups as well as a card component
 - Dividers (`hr`'s)
 - Progress bars
 - Scrollbars
+- Header/navigation
 
 ### Helpers
 We currently provide basic helpers for the following styling:
