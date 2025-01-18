@@ -1,6 +1,6 @@
 {
   "name": "95css",
-  "version": "0.2.5",
+  "version": "0.4.0",
   "description": "A windows 95-style CSS framework",
   "main": "css/95ss.min.css",
   "scripts": {
@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/YoshiMannaert/95CSS/issues"
   },
-  "homepage": "https://github.com/YoshiMannaert/95CSS#readme",
+  "homepage": "https://yoshimannaert.github.io/95CSS/",
   "devDependencies": {
     "cssnano": "^7.0.6",
     "postcss-cli": "^11.0.0",

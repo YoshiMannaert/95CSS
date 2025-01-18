@@ -3,7 +3,7 @@
 # 95CSS
 ## A Windows 95 style CSS framework
 
-![Version 0.2.5](https://img.shields.io/badge/version-0.2.5-brightgreen.svg)
+![Version 0.4.0](https://img.shields.io/badge/version-0.4.0-brightgreen.svg)
 ![GitHub License](https://img.shields.io/github/license/YoshiMannaert/95CSS)
 ![Maintenance](https://img.shields.io/maintenance/yes/2025)
 <!-- ![GitHub file size in bytes](https://img.shields.io/github/size/YoshiMannaert/95css/css%2F95.min.css) -->
@@ -52,13 +52,21 @@ Including
 Comes in different sizes
 Can be used for modals/popups as well as a card component
 
-### Other
+### Other components
 - Tabs
 - Fieldsets
 - Legends
 - Dividers (`hr`'s)
 - Progress bars
 - Scrollbars
+- Header/navigation
+
+### Helpers
+We currently provide basic helpers for the following styling:
+- Width
+- Spacing (margins, paddings, gaps)
+- Grid
+This will be expanded upon in the future
 
 ## Javascript
 Currently, no JavaScript is included in the framework. While this may change in the future to enhance interactivity for certain components—such as tabs, modals, or dropdowns—or to enable more advanced styling, our focus is on providing robust CSS styles that make it easy for you to implement any necessary JavaScript yourself.
