@@ -1,6 +1,6 @@
 {
   "name": "95css",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A windows 95-style CSS framework",
   "main": "css/95ss.min.css",
   "scripts": {
