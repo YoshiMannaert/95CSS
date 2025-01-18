@@ -1,0 +1,5 @@
+@mixin checkered-bg {
+    background-image:  repeating-linear-gradient(45deg, var(--color-gray-100) 25%, transparent 25%, transparent 75%, var(--color-gray-100) 75%, var(--color-gray-100)), repeating-linear-gradient(45deg, var(--color-gray-100) 25%, var(--color-white) 25%, var(--color-white) 75%, var(--color-gray-100) 75%, var(--color-gray-100));
+    background-position: 0 0, 3px 3px;
+    background-size: 6px 6px;
+}

@@ -1,5 +1,7 @@
 // TODO: scrollbar not showing in Firefox
 
+@use '../helpers/mixins';
+
 ::-webkit-scrollbar {
     width: 32px;
     min-height: 32px;
@@ -7,10 +9,7 @@
 
 ::-webkit-scrollbar-track {
     background-color: #ffffff;
-    opacity: 0.8;
-    background-image:  repeating-linear-gradient(45deg, #DEDEDE 25%, transparent 25%, transparent 75%, #DEDEDE 75%, #DEDEDE), repeating-linear-gradient(45deg, #DEDEDE 25%, #ffffff 25%, #ffffff 75%, #DEDEDE 75%, #DEDEDE);
-    background-position: 0 0, 3px 3px;
-    background-size: 6px 6px;
+    @include mixins.checkered-bg;
 }
 
 ::-webkit-scrollbar-thumb {

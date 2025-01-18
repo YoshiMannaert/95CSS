@@ -1,3 +1,5 @@
+@use '../helpers/mixins';
+
 header,
 .header {
     background-color: var(--color-gray-200);
@@ -37,10 +39,7 @@ header nav a,
     &.is-active {
         box-shadow: var(--shadow-inner-3);
         background-color: var(--color-white);
-        opacity: 0.8;
-        background-image:  repeating-linear-gradient(45deg, var(--color-gray-100) 25%, transparent 25%, transparent 75%, var(--color-gray-100) 75%, var(--color-gray-100)), repeating-linear-gradient(45deg, var(--color-gray-100) 25%, var(--color-white) 25%, var(--color-white) 75%, var(--color-gray-100) 75%, var(--color-gray-100));
-        background-position: 0 0, 4px 4px;
-        background-size: 8px 8px;
+        @include mixins.checkered-bg;
     }
 }
 
