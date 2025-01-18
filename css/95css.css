@@ -508,8 +508,7 @@ progress::-moz-progress-bar {
 
 ::-webkit-scrollbar-track {
   background-color: #ffffff;
-  opacity: 0.8;
-  background-image: repeating-linear-gradient(45deg, #DEDEDE 25%, transparent 25%, transparent 75%, #DEDEDE 75%, #DEDEDE), repeating-linear-gradient(45deg, #DEDEDE 25%, #ffffff 25%, #ffffff 75%, #DEDEDE 75%, #DEDEDE);
+  background-image: repeating-linear-gradient(45deg, var(--color-gray-100) 25%, transparent 25%, transparent 75%, var(--color-gray-100) 75%, var(--color-gray-100)), repeating-linear-gradient(45deg, var(--color-gray-100) 25%, var(--color-white) 25%, var(--color-white) 75%, var(--color-gray-100) 75%, var(--color-gray-100));
   background-position: 0 0, 3px 3px;
   background-size: 6px 6px;
 }
@@ -729,10 +728,9 @@ header nav a:active, header nav a.is-active,
 .logo.is-active {
   box-shadow: var(--shadow-inner-3);
   background-color: var(--color-white);
-  opacity: 0.8;
   background-image: repeating-linear-gradient(45deg, var(--color-gray-100) 25%, transparent 25%, transparent 75%, var(--color-gray-100) 75%, var(--color-gray-100)), repeating-linear-gradient(45deg, var(--color-gray-100) 25%, var(--color-white) 25%, var(--color-white) 75%, var(--color-gray-100) 75%, var(--color-gray-100));
-  background-position: 0 0, 4px 4px;
-  background-size: 8px 8px;
+  background-position: 0 0, 3px 3px;
+  background-size: 6px 6px;
 }
 
 .logo {
